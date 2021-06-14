@@ -75,7 +75,7 @@ router.hooks({
         break;
       case "Blog":
         state.Blog.posts = [];
-        axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
+        axios.get("https://dante-ipsum.herokuapp.com/list_passages").then(response => {
           response.data.forEach(post => {
             state.Blog.posts.push(post);
           });

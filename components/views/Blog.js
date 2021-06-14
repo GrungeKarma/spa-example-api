@@ -13,7 +13,7 @@ export default st => html`
 function formatBlogPost(post) {
   return `
     <div class="blog-post">
-      <h4>${post.title} by User ${post.userId}</h4>
+      <h4>${post.id} by User ${post.id}</h4>
       <p>${post.body}</p>
     </div>
   `;
